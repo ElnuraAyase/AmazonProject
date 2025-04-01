@@ -4,11 +4,14 @@ public class FavoriteBook {public class FavoriteBook {
 
         //TODO: Your code goes here
         String title = "Idiot";
-        String autor = " Fiodor Dostoevskiy";
-        int page = 345;
+        String author = " Fiodor Dostoevskiy";
+        int pages = 345;
         double money = 56.99;
 
-        System.out.println();
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Pages: " + pages);
+        System.out.println("Price: $" + money);
 
 
     }
