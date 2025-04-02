@@ -23,3 +23,10 @@ public class CurrencyConversion {
         System.out.printf("Amount in USD after converting back: USD%.2f%n", amountInUSD);
     }
 }
+\* 
+
+initialAmountUSD: 100.0USD
+Amount in EUR: 85.0EUR
+Balance after expenditure30.0EUR
+Amount in USD after converting back: USD35.29
+*\
