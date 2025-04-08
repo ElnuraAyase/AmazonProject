@@ -1,1 +1,16 @@
-wwithout answers 
+// without answers 
+public class Main {
+    public static void main(String args[]) {
+        String text = "Adventure";
+        // TODO: Check the length using length() and print the length
+        // TODO: Get the character at position 3 and print the character        
+        // TODO: Get a part of the String from position 1 to 4 and print the string
+
+        String anotherText= "Adventure";
+        // TODO: Compare text with anotherText using equals() and print the output
+        // TODO: Change to uppercase using toUpperCase() and print the converted string
+        // TODO: Change to lowercase using toLowerCase() and print the converted string
+        // TODO: Check if it contains "vent" using contains() and print the output
+        // TODO: Replace 'e' with 'a' and print the output
+    }
+}
