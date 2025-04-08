@@ -16,7 +16,7 @@ public class StringLength {
 // Output: The length of the String:Banana is : 6 letters.
 
 
-// 2. charAt(index)
+// 2. charAt(index)  finding specific letter or part of the text 
 public class StringGetCharAtIndex {
     public static void main(String args[]) {
 
@@ -49,7 +49,7 @@ public class Main {
     }
 }
 
-//  4. equals
+//  4. equals = find the wquality in compared texts 
 
 public class StringUseEqualsMethod {
     public static void main(String args[]) {
