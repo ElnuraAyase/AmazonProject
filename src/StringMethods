@@ -117,3 +117,21 @@ public class StringContainsSubstring {
 //output: The fruit: "Banana"
 The fruit "Banana" contains the substring "ana": true
 The fruit "Banana" contains the substring "brooks": false
+
+
+// 7. replace(oldChar, newChar)
+public class StringReplaceAllChar {
+    public static void main(String args[]) {
+
+        // B is capital
+        String fruit = "Banana";
+
+        String fruitWithLetter_A_replacedWith_O = fruit.replace('a','o');
+
+        System.out.println("The fruit: \"" + fruit + "\"");
+        System.out.println("The fruit \"" + fruit + "\" with character \"a\" replaced with character \"o\": " + fruitWithLetter_A_replacedWith_O);
+    }
+}
+
+//output: The fruit: "Banana"
+The fruit "Banana" with character "a" replaced with character "o": Bonono
