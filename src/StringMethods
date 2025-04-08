@@ -1,0 +1,119 @@
+// 1.length()
+
+public class StringLength {
+    public static void main(String args[]) {
+
+        String fruit = "Banana";
+
+        // This will be 6 because "Banana" has 6 letters
+        int length = fruit.length();
+
+        System.out.println("The length of the String:" + fruit + " is : " + length + " letters.");
+    }
+}
+
+
+// Output: The length of the String:Banana is : 6 letters.
+
+
+// 2. charAt(index)
+public class StringGetCharAtIndex {
+    public static void main(String args[]) {
+
+        String fruit = "Banana";
+
+        // This will be 'a', because 'B' is at index 0 and 'a' is at index 1
+        char letter = fruit.charAt(1);
+
+        System.out.println("The character at index 1 is: " + letter);
+    }
+}
+// Output : The character at index 1 is: a
+
+
+
+
+
+/*
+3. substring(start, end)
+Try this yourself by extracting the substring “script” from the word “subscription”.  Follow these steps in the interactive code block:
+*/
+
+public class Main {
+    public static void main(String args[]) {
+        String text = "subscription";
+        String extractedText = text.substring(3, 9);
+        // TODO: complete the code by filling in the blanks.
+        // Note: Remove the underscore to fill up the blanks
+        System.out.println("Output: " + extractedText);
+    }
+}
+
+//  4. equals
+
+public class StringUseEqualsMethod {
+    public static void main(String args[]) {
+
+        // B is capital
+        String fruit1 = "Banana";
+
+        // b is small
+        String fruit2 = "banana";
+
+        // B is capital
+        String fruit3 = "Banana";
+
+        // will be false since the case do not match
+        boolean result1 = fruit1.equals(fruit2);
+
+        // will be true since the case matches
+        boolean result2 = fruit1.equals(fruit3);
+
+        System.out.println("Using equals() method \"" +  fruit1 + "\" is equal to \"" + fruit2 + "\": " + result1);
+        System.out.println("Using equals() method \"" +  fruit1 + "\" is equal to \"" + fruit3 + "\": " + result2);
+    }
+}
+//output: Using equals() method "Banana" is equal to "banana": false
+Using equals() method "Banana" is equal to "Banana": true
+
+// 5.toLowerCase() and toUpperCase()
+
+public class StringUpperLower {
+    public static void main(String args[]) {
+
+        // B is capital
+        String fruit = "Banana";
+
+        String fruitInUpperCase = fruit.toUpperCase();
+        String fruitInLowerCase = fruit.toLowerCase();
+
+        System.out.println("The fruit: \"" + fruit + "\"");
+        System.out.println("The fruit converted to uppercase: \"" + fruitInUpperCase + "\"");
+        System.out.println("The fruit converted to lowercase: \"" + fruitInLowerCase + "\"");
+    }
+}
+
+//Output : The fruit: "Banana"
+The fruit converted to uppercase: "BANANA"
+The fruit converted to lowercase: "banana"
+
+//6.  contains(sequence)
+
+public class StringContainsSubstring {
+    public static void main(String args[]) {
+
+        // B is capital
+        String fruit = "Banana";
+
+        boolean hasAna = fruit.contains("ana");
+        boolean hasBrooks = fruit.contains("brooks");
+
+        System.out.println("The fruit: \"" + fruit + "\"");
+        System.out.println("The fruit \"" + fruit + "\" contains the substring \"ana\": " + hasAna);
+        System.out.println("The fruit \"" + fruit + "\" contains the substring \"brooks\": " + hasBrooks);
+    }
+}
+
+//output: The fruit: "Banana"
+The fruit "Banana" contains the substring "ana": true
+The fruit "Banana" contains the substring "brooks": false
