@@ -53,3 +53,43 @@ Introduction Years:
 
 
   
+public static void (String[] args) {
+  String[] superheroes = {"Batman", "Superman", "Wonder Woman", "Spider-Man", "Iron Man"};
+  int[] introductionYears = {1939, 1938, 1941, 1962, 1963};
+
+  System.out.println("Superheroes and Their Introduction Years:');
+  for (int i = 0 , i <superheroes.length; i++){
+    System.out.println(superheroes[i] + " - " + intruductionYears[i]);
+  }
+}
+
+/*
+                                                                                          Simple for loop
+Superheroes and Their Introduction Years:
+Batman     - 1939
+Superman - 1938
+Wonder Woman - 1941
+Spider-Man - 1962
+Iron Man - 1963
+
+*/
+                                                                                  
+public static void (String[] args) {
+  String[] superheroes = {"Batman", "Superman", "Wonder Woman", "Spider-Man", "Iron Man"};
+  int[] introductionYears = {1939, 1938, 1941, 1962, 1963};
+  
+  System.out.println("Superheroes and Their Introduction Years:");
+  for (i = 0; i < superheroes.lenght; i++){                                    //The loop runs as long as i is less than the length of the array, If they had different lengths, this causes an ArrayIndexOutOfBoundsException
+    System.out.printf("%-12s - %4d%n", superhearoes[i], introductionYear[i]);
+  }
+/*
+
+                                                                                               printf() helps in formatting (e.g., fixed-width columns).
+Superheroes and Their Introduction Years:
+Batman       - 1939
+Superman     - 1938
+Wonder Woman - 1941
+Spider-Man   - 1962
+Iron Man     - 1963
+
+  */
