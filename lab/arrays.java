@@ -58,7 +58,7 @@ public static void (String[] args) {
   int[] introductionYears = {1939, 1938, 1941, 1962, 1963};
 
   System.out.println("Superheroes and Their Introduction Years:');
-  for (int i = 0 , i <superheroes.length; i++){
+  for (int i = 0; i <superheroes.length; i++){
     System.out.println(superheroes[i] + " - " + intruductionYears[i]);
   }
 }
