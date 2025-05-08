@@ -1,3 +1,5 @@
+package MODULE1.LAB;
+
 import java.util.Arrays;
 
 public class simple_print_array {

@@ -1,3 +1,5 @@
+package MODULE1.LAB;
+
 public class loop_array_print {
 
     public static void main (String[] args){

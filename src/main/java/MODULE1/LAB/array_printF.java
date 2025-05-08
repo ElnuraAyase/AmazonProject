@@ -1,3 +1,4 @@
+package MODULE1.LAB;
 
 public class array_printF {
 
