@@ -11,5 +11,4 @@ public class todo5 {
         // TODO 5b: Print the length of the array containing superhero year of introduction
         System.out.println("The Length of the introduction year: " + years.length);
     }
-
 }
