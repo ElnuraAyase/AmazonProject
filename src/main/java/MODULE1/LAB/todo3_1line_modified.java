@@ -1,6 +1,6 @@
 package MODULE1.LAB;
 
-public class array_todo3_1line {
+public class todo3_1line_modified {
 
     public static void main(String[] args) {
         // Declare and initialize an array of superhero names
