@@ -13,5 +13,4 @@ public class todo4 {
         // TODO 4c: Print the modified year of introduction of the third superhero
         System.out.println("Updated third superhero introduction year: " + yrs[2]);
     }
-
 }
