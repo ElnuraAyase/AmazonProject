@@ -1,0 +1,44 @@
+public class Main {
+    public static void main(String args[]) {
+        String text = "Adventure";
+        // TODO: Check the length using length() and print the length
+        int lentht = text.length();
+        // TODO: Get the character at position 3 and print the character     
+        char letter = text.charAt(3);   
+        // TODO: Get a part of the String from position 1 to 4 and print the string
+        String part = text.substring(1, 4); // mistake: String was written as 'string' 
+
+        String anotherText= "Adventure";
+        // TODO: Compare text with anotherText using equals() and print the output
+        boolean comparNO = anotherText.equals(text);
+        // TODO: Change to uppercase using toUpperCase() and print the converted string
+        String upperc = anotherText.toUpperCase();    //mistace: toUpperCase was written toUppercase
+        // TODO: Change to lowercase using toLowerCase() and print the converted string
+        String lowerc = anotherText.toLowerCase();    //mistace: toLowerCase was written toLowercase
+        // TODO: Check if it contains "vent" using contains() and print the output
+        boolean checking_vent = anotherText.contains("vent");
+        // TODO: Replace 'e' with 'a' and print the output
+        String newtxt = anotherText.replace('e','a');
+
+        System.out.println("1. text is " + lentht + "lenght");
+        System.out.println("2. new character is: " + letter);
+        System.out.println("3. part from 1 to 4 is : " + part);
+        System.out.println("4. text Adventure with Adventure:  " + comparNO);//mistake" wrote compareNo instead comparNo
+        System.out.println("5. make Adventure uppercase: " + upperc);
+        System.out.println("6. make Adventure lowercase: " + lowerc);
+        System.out.println("7. check vent in  Adventure: " + checking_vent);
+        System.out.println("8. repalce e with a: " + newtxt);
+    }
+}
+
+/*
+1. text is 9lenght
+2. new character is: e
+3. part from 1 to 4 is : dve
+4. text Adventure with Adventure:  true
+5. make Adventure uppercase: ADVENTURE
+6. make Adventure lowercase: adventure
+7. check vent in  Adventure: true
+8. repalce e with a: Advantura
+
+*/

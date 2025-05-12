@@ -1,3 +1,4 @@
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -12,7 +13,10 @@ target/
 *.iml
 *.ipr
 
-### Eclipse ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
 .apt_generated
 .classpath
 .factorypath
@@ -21,19 +25,30 @@ target/
 .springBeans
 .sts4-cache
 
-### NetBeans ###
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+
+
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+
 
 ### VS Code ###
 .vscode/
 
 ### Mac OS ###
+
 .DS_Store
 /.idea/
+
+.DS_Store
+
