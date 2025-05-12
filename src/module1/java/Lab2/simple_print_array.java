@@ -1,4 +1,4 @@
-package MODULE1.LAB;
+package Lab2;
 
 import java.util.Arrays;
 

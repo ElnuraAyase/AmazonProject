@@ -1,4 +1,4 @@
-package MODULE1.LAB;
+package Lab2;
 
 public class todo5 {
     public static void main(String[] args){

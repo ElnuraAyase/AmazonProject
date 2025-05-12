@@ -1,4 +1,4 @@
-package MODULE1.LAB;
+package Lab2;
 
 public class loop_array_print {
 

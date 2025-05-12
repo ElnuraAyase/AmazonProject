@@ -2,7 +2,7 @@ public class Main {
     public static void main(String args[]) {
         String text = "Adventure";
         // TODO: Check the length using length() and print the length
-        int lentht = text.length();
+        int lenth = text.length();
         // TODO: Get the character at position 3 and print the character     
         char letter = text.charAt(3);   
         // TODO: Get a part of the String from position 1 to 4 and print the string

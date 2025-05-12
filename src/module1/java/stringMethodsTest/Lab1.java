@@ -1,9 +1,11 @@
-public class Main {
+package stringMethodsTest;
+
+public class Lab1 {
 
     public static void main(String[] args) {
         String bookTitle = "The Adventures of Captain Fantastic and the Magical Unicorn";
         int titleLength = bookTitle.length(); //TODO: Complete the code statement to find out the length of bookTitle
-        // System.out.println("Length of the book title: " + titleLength);
+        System.out.println("Length of the book title: " + titleLength);
 
         //Declare and initialise the length of shortened book title
         int maxLength = 20;

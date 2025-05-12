@@ -1,4 +1,6 @@
-public class Main {
+package stringMethodsTest;
+
+public class solutionGiven {
     public static void main(String args[]) {
         String firstName = "Harry";
         String lastName = "Grow";

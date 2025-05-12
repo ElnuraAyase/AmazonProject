@@ -1,4 +1,4 @@
-package MODULE1.LAB;
+package Lab2;
 
 public class todo3_1line_modified {
 

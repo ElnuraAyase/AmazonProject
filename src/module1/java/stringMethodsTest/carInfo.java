@@ -1,3 +1,5 @@
+package stringMethodsTest;
+
 public class carInfo {
     public static void main(String[] args) {
         // Declare and initialize a String variable for the car's make
