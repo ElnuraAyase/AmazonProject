@@ -16,7 +16,8 @@ public class StringLength {
 // Output: The length of the String:Banana is : 6 letters.
 
 
-// 2. charAt(index)  finding specific letter or part of the text 
+// 2. charAt(index)  finding specific letter or part of the text
+
 public class StringGetCharAtIndex {
     public static void main(String args[]) {
 
@@ -28,6 +29,7 @@ public class StringGetCharAtIndex {
         System.out.println("The character at index 1 is: " + letter);
     }
 }
+
 // Output : The character at index 1 is: a
 
 
