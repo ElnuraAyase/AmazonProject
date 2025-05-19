@@ -185,7 +185,7 @@ public class Todo3Check {
             throw new RestartException();
         }
         if (input.equalsIgnoreCase("exit")) {
-            throw new ExitException();
+                  throw new ExitException();
         }
     }
 
