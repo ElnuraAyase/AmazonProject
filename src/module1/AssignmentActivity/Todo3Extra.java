@@ -30,10 +30,10 @@ public class Todo3Extra {
                 System.out.println("Price per ticket: $" + price);
                 System.out.println("Total price for all tickets: " + totalPr);
 // ask to restart
-                System.out.print(" Do you want to start over ? (yes / no): ");
+                System.out.print(" \nDo you want to start over ? (yes / no): ");
                 String again = input.nextLine().trim().toLowerCase();
                 if (!again.equals("yes")) {
-                    System.out.println("Exit succesfully done.");
+                    System.out.println("Exit successfully done.");
                     break;
                 }
             } catch (RestartException e) {
@@ -47,18 +47,20 @@ public class Todo3Extra {
     }
 
 
-    private static String getValidName(Scanner input, String nameType) {
-
+    private static String getValidName(Scanner input, String nameType) throws RestartException {   // added exception
         String name;
+
         while (true) {
             System.out.println("Enter your " + nameType + " name: ");
             name = input.nextLine().trim(); //remove spaces around
 
+
+            checkForCommands(name);
             // if name upperCase or lowercase
 
             if (name.equals(name.toUpperCase())) {
                 name = name.toLowerCase();
-                System.out.println("Your " + nameType + " name was in all uppercases");
+                System.out.println("Your " + nameType + " name was in all uppercases, adjusted successfuly");
             }
 
             if (!name.isEmpty()) {
@@ -72,13 +74,15 @@ public class Todo3Extra {
         return name;
     }
 
-    private static int getValidNumber(Scanner input, String field) {
+    private static int getValidNumber(Scanner input, String field) throws RestartException{  //new changes
         int number = 0;
         while (true) {
             try {
                 System.out.println("Enter the " + field + ": ");
                 String inputValue = input.nextLine().trim();
                 number = Integer.parseInt(inputValue); //try to convert to integer
+
+                checkForCommands(String.valueOf(number));                                                     //new changes
 
 
                 if (number <= 0) {
@@ -93,13 +97,17 @@ public class Todo3Extra {
         return number;
     }
 
-    private static double getValidPrice(Scanner input) {
+    private static double getValidPrice(Scanner input) throws RestartException {      //new changes
         double price = 0.0;
         while (true) {
             try {
                 System.out.println("Enter valid price for tickets: ");
                 String inputValue = input.nextLine().trim();
                 price = Double.parseDouble(inputValue);
+
+
+                checkForCommands(String.valueOf(price));                        // new changes
+
 
                 if (price <= 0) {
                     System.out.println("The price per ticket: ");
@@ -113,5 +121,14 @@ public class Todo3Extra {
         return price;
     }
 
-}
 
+    private static void checkForCommands(String input) throws RestartException{
+        if (input.equalsIgnoreCase("restart")) {
+            throw new RestartException();
+        }
+        if (input.equalsIgnoreCase("exit")) {
+            System.out.println("Exiting program.");
+            System.exit(0);
+        }
+    }
+}

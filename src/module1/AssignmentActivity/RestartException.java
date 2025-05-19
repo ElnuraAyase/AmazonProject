@@ -1,6 +1,6 @@
 package AssignmentActivity;
 
-public class RestartException extends Todo3Extra{
+public class RestartException extends Exception{
 
     public RestartException(){
         super();
